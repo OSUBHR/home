@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BHR OSU</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><i class="fas fa-hands-helping"></i> BHR</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="harm-reduction.html" class="nav-link">What is Harm Reduction</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Get In Touch</h1>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-form-section">
+                    <h2>Contact Us</h2>
+                    <p>Have questions? Want to get involved? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number (Optional)">
+                        <select required>
+                            <option value="">Select a Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="events">Events & Volunteering</option>
+                            <option value="resources">Request Resources</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Connect With Us</h2>
+                    
+                    <div class="contact-info-item">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:osubhr@osu.edu">osubhr@osu.edu</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                        <p>Ohio State University<br>Columbus, OH</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3><i class="fas fa-phone"></i> Phone</h3>
+                        <p>For urgent support, contact<br><strong>SAMHSA National Helpline</strong><br>1-800-662-4357 (24/7)</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                        <p>Monday - Friday: 10 AM - 5 PM<br>Saturday - Sunday: Closed<br><em>During school year</em></p>
+                    </div>
+
+                    <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
+
+                    <h3 style="margin-top: 2rem;">Follow Us</h3>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="https://www.instagram.com/osubhr/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/OSUBHR/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/OSUBHR" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Buckeyes for Harm Reduction. All rights reserved.</p>
+            <p>Ohio State University Student Organization</p>
+        </div>
+    </footer>
+
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-form {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px rgba(204, 0, 0, 0.3);
+        }
+
+        .contact-form select {
+            cursor: pointer;
+        }
+
+        .contact-form button {
+            width: 100%;
+        }
+
+        .contact-info-section {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            height: fit-content;
+        }
+
+        .contact-info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info-item i {
+            font-size: 1.3rem;
+        }
+
+        .contact-info-item p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .contact-info-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-info-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info-section {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // In a real implementation, this would send data to a server
+                alert('Thank you for your message! We\'ll get back to you soon.');
+                contactForm.reset();
+            });
+        }
+
+        // Include the main script
+    </script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
