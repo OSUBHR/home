@@ -88,8 +88,9 @@ This website is created for Buckeyes for Harm Reduction. All rights reserved.
 
 ## Support
 
-For issues or questions about this website, please contact the BHR team at osubhr@osu.edu.
+For issues or questions about this website, please contact the BHR team at harmreductionbuckeyes@gmail.com.
 
 ---
 
 **Buckeyes for Harm Reduction** - Grassroots student organization at Ohio State University dedicated to supporting those affected by addiction and advocating for harm reduction.
+
