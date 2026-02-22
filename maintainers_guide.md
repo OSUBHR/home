@@ -35,34 +35,8 @@ Before you begin, you'll need:
 3. If not installed, macOS will prompt you to install Command Line Tools
 4. Follow the prompts to install
 
-### Linux:
-1. Open Terminal
-2. Run: `sudo apt-get update && sudo apt-get install git` (Ubuntu/Debian)
-3. Or: `sudo yum install git` (Fedora/RHEL)
+## Step 3: Clone the Repository
 
-## Step 3: Configure Git (First Time Only)
-
-1. Open VS Code
-2. Open the integrated terminal: **Terminal** > **New Terminal** (or press `` Ctrl+` ``)
-3. Set your Git username:
-   ```bash
-   git config --global user.name "Your Name"
-   ```
-4. Set your Git email:
-   ```bash
-   git config --global user.email "your.email@example.com"
-   ```
-
-## Step 4: Clone the Repository
-
-1. In VS Code, press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette
-2. Type "Git: Clone" and select it
-3. Paste the repository URL (get this from your GitHub repository page)
-4. Choose a folder location on your computer where you want to save the project
-5. Click **Select Repository Location**
-6. When prompted, click **Open** to open the cloned repository in VS Code
-
-**Alternative method using Terminal:**
 1. Open Terminal in VS Code
 2. Navigate to where you want to clone the repository:
    ```bash
@@ -70,40 +44,32 @@ Before you begin, you'll need:
    ```
 3. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/OSUBHR/home.git
    ```
 4. Open the folder: **File** > **Open Folder** and select the cloned repository
 
-## Step 5: Install Live Server Extension
+## Step 4: Install Live Server Extension
 
 1. In VS Code, click the **Extensions** icon in the left sidebar (or press `Ctrl+Shift+X`)
 2. Search for "Live Server" by Ritwick Dey
 3. Click **Install**
 4. Wait for installation to complete
 
-## Step 6: Launch the Website Locally
+## Step 5: Launch the Website Locally
 
-### Method 1: Using Live Server (Recommended)
 1. In VS Code, open the `index.html` file
 2. Right-click anywhere in the editor
 3. Select **Open with Live Server**
 4. Your default browser will open automatically showing the website
 5. The page will auto-reload whenever you save changes to any file
 
-### Method 2: Using File Path
-1. In VS Code's Explorer sidebar, right-click `index.html`
-2. Select **Reveal in File Explorer** (Windows) / **Reveal in Finder** (macOS)
-3. Double-click `index.html` to open it in your browser
-4. **Note:** You'll need to manually refresh the browser after making changes
-
-## Step 7: Making Changes
+## Step 6: Making Changes
 
 1. Edit any file in VS Code
 2. Save your changes: `Ctrl+S` (Windows/Linux) or `Cmd+S` (macOS)
-3. If using Live Server, the browser will automatically refresh
-4. If not using Live Server, manually refresh your browser to see changes
+3. Using Live Server, the browser will automatically refresh
 
-## Step 8: Committing and Pushing Changes
+## Step 7: Committing and Pushing Changes
 
 ### Stage Your Changes:
 1. Click the **Source Control** icon in the left sidebar (or press `Ctrl+Shift+G`)
