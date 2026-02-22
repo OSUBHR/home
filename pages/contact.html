@@ -8,26 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html"><i class="fas fa-hands-helping"></i> BHR</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="harm-reduction.html" class="nav-link">What is Harm Reduction</a></li>
-                <li><a href="resources.html" class="nav-link">Resources</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="site-header" data-include="partials/header.html"></div>
 
     <!-- Page Header -->
     <div class="page-header">
@@ -115,7 +96,7 @@
     <style>
         .contact-container {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 3fr 2fr;
             gap: 3rem;
             margin-top: 2rem;
         }
@@ -125,6 +106,15 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: var(--shadow);
+        }
+
+        .contact-form-section {
+            padding-top: 2rem;
+        }
+
+        .contact-form-section h2,
+        .contact-info-section h2 {
+            margin-top: 0;
         }
 
         .contact-form input,

@@ -1,13 +1,13 @@
 /* Root Variables */
 :root {
-    --primary-color: #CC0000;
-    --secondary-color: #00264d;
-    --accent-color: #f39c12;
-    --light-bg: #f8f9fa;
-    --dark-text: #222;
-    --light-text: #666;
-    --border-color: #ddd;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --primary-color: #C8102E;
+    --secondary-color: #1A1A1A;
+    --charcoal-bg: #2B2B2B;
+    --light-bg: #F7F5F2;
+    --dark-text: #1A1A1A;
+    --light-text: #6B6B6B;
+    --border-color: #D6D1C8;
+    --shadow: 0 2px 10px rgba(26, 26, 26, 0.12);
 }
 
 /* General Styles */
@@ -23,9 +23,11 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    /* font-family: 'Georgia', 'Times New Roman', serif; */
+    font-size: 16px;
+    line-height: 1.7;
     color: var(--dark-text);
-    background-color: #fff;
+    background-color: var(--light-bg);
 }
 
 .container {
@@ -36,7 +38,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--dark-text);
 }
 
 h2 {
@@ -47,11 +50,13 @@ h2 {
 p {
     color: var(--light-text);
     margin-bottom: 1rem;
+    text-align: left;
+    max-width: 85ch;
 }
 
 /* Navigation */
 .navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--charcoal-bg);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -71,7 +76,7 @@ p {
 .nav-logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: white;
+    color: var(--light-bg);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -86,10 +91,11 @@ p {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-link {
-    color: white;
+    color: var(--light-bg);
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
@@ -97,6 +103,19 @@ p {
 
 .nav-link:hover {
     color: var(--primary-color);
+}
+
+.nav-cta {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.nav-cta:hover {
+    background-color: #A10D24;
+    color: var(--light-bg);
 }
 
 .hamburger {
@@ -108,15 +127,15 @@ p {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--light-bg);
     margin: 5px 0;
     transition: 0.3s;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(204, 0, 0, 0.7), rgba(0, 38, 77, 0.7)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200') center/cover;
-    color: white;
+    background: linear-gradient(rgba(200, 16, 46, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200') center/cover;
+    color: var(--light-bg);
     padding: 120px 20px;
     text-align: center;
     min-height: 600px;
@@ -125,16 +144,24 @@ p {
     justify-content: center;
 }
 
+.hero-content {
+    text-align: center;
+    max-width: 90ch;
+    margin: 0 auto;
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    color: var(--light-bg);
 }
 
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--light-bg);
+    text-align: center;
 }
 
 /* Buttons */
@@ -152,29 +179,29 @@ p {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--light-bg);
 }
 
 .btn-primary:hover {
-    background-color: #a00000;
+    background-color: #A10D24;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
 }
 
 .btn-secondary {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--light-bg);
 }
 
 .btn-secondary:hover {
-    background-color: #001a38;
+    background-color: #0F0F0F;
 }
 
 /* Mission Section */
 .mission {
     background-color: var(--light-bg);
     padding: 80px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .mission h2 {
@@ -184,14 +211,14 @@ p {
 .mission p {
     font-size: 1.1rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 0 1rem 0;
     line-height: 1.8;
 }
 
 /* Services Grid */
 .what-we-do {
     padding: 80px 20px;
-    background-color: #fff;
+    background-color: var(--light-bg);
 }
 
 .what-we-do h2 {
@@ -209,7 +236,7 @@ p {
     background-color: var(--light-bg);
     padding: 2rem;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
 }
@@ -246,7 +273,7 @@ p {
 }
 
 .section-subtitle {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
@@ -256,7 +283,7 @@ p {
 }
 
 .signup-form {
-    background-color: white;
+    background-color: var(--light-bg);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -293,7 +320,7 @@ p {
 /* Social Section */
 .social-section {
     padding: 60px 20px;
-    background-color: white;
+    background-color: var(--light-bg);
     text-align: center;
 }
 
@@ -312,7 +339,7 @@ p {
     height: 60px;
     border-radius: 50%;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--light-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,20 +356,19 @@ p {
 /* Footer */
 .footer {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--light-bg);
     text-align: center;
     padding: 2rem;
 }
 
 .footer p {
-    color: white;
     margin: 0.5rem 0;
 }
 
 /* Page Sections */
 .page-header {
-    background: linear-gradient(rgba(204, 0, 0, 0.7), rgba(0, 38, 77, 0.7)), url('https://images.unsplash.com/photo-1576091160575-2173dba999ef?w=1200') center/cover;
-    color: white;
+    background: linear-gradient(rgba(200, 16, 46, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1576091160575-2173dba999ef?w=1200') center/cover;
+    color: var(--light-bg);
     padding: 60px 20px;
     text-align: center;
     min-height: 300px;
@@ -353,7 +379,7 @@ p {
 
 .page-header h1 {
     font-size: 2.5rem;
-    color: white;
+    color: var(--light-bg);
 }
 
 .page-content {
@@ -371,6 +397,20 @@ p {
 .content-section p {
     line-height: 1.8;
     margin-bottom: 1rem;
+}
+
+.content-section ul,
+.page-content ul {
+    margin: 0 0 1.5rem 0;
+    padding-left: 0;
+    list-style-position: inside;
+    max-width: 85ch;
+    text-align: left;
+}
+
+.content-section li,
+.page-content li {
+    margin-bottom: 0.5rem;
 }
 
 /* Responsive Design */

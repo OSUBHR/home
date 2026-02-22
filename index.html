@@ -9,26 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html"><i class="fas fa-hands-helping"></i> BHR</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="pages/about.html" class="nav-link">About</a></li>
-                <li><a href="pages/harm-reduction.html" class="nav-link">What is Harm Reduction</a></li>
-                <li><a href="pages/resources.html" class="nav-link">Resources</a></li>
-                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="site-header" data-include="partials/header.html"></div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -49,7 +30,7 @@
     </section>
 
     <!-- What We Do Section -->
-    <section class="what-we-do">
+    <section class="what-we-do" id="what-we-do">
         <div class="container">
             <h2>Who Are We?</h2>
             <div class="services-grid">
@@ -73,25 +54,6 @@
                     <h3>Community</h3>
                     <p>We provide students with volunteering experiences to directly help those in need in and around Columbus.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section class="events">
-        <div class="container">
-            <h2>Get Involved</h2>
-            <p class="section-subtitle">Join us in making a difference. Sign up for updates on community and campus outreach events.</p>
-            <div class="event-signup">
-                <form id="signupForm" class="signup-form">
-                    <div class="form-row">
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                    </div>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Tell us about your interest in BHR" rows="4" required></textarea>
-                    <button type="submit" class="btn btn-primary">Join Our Mailing List</button>
-                </form>
             </div>
         </div>
     </section>
