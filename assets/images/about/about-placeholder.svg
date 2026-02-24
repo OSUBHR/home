@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">About Page Slideshow Placeholder</title>
+  <desc id="desc">Placeholder image for About page slideshow photos.</desc>
+  <rect width="1200" height="700" fill="#ece7de"/>
+  <rect x="80" y="80" width="1040" height="540" rx="24" fill="#d9d1c4"/>
+  <text x="600" y="345" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="56" fill="#6b6b6b">Add About Page Photo</text>
+</svg>

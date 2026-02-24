@@ -24,6 +24,22 @@
             </div>
 
             <div class="content-section">
+                <h2>Photo Highlights</h2>
+                <div
+                    class="about-slideshow"
+                    data-slideshow
+                    data-slide-interval="5000"
+                    data-slides="../assets/images/about/slide-1.jpg,../assets/images/about/slide-2.jpg,../assets/images/about/slide-3.jpg"
+                >
+
+                    <button class="slideshow-control prev" type="button" data-slide-action="prev" aria-label="Previous slide">&#10094;</button>
+                    <button class="slideshow-control next" type="button" data-slide-action="next" aria-label="Next slide">&#10095;</button>
+
+                    <div class="slideshow-dots" aria-label="Slideshow navigation"></div>
+                </div>
+            </div>
+
+            <div class="content-section">
                 <h2>Our Mission</h2>
                 <p>Buckeyes for Harm Reduction is a grassroots student organization that aims to provide support to those affected by addiction and the opioid epidemic by advocating for harm reduction at the local, state, and national levels. We engage with the campus community to provide students with harm reduction resources and empower them to advocate for comprehensive public health reforms that prevent overdoses and increase public well-being.</p>
             </div>
@@ -120,9 +136,91 @@
             margin: 0;
         }
 
+        .about-slideshow {
+            position: relative;
+            max-width: 900px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background-color: var(--light-bg);
+        }
+
+        .about-slide {
+            display: none;
+        }
+
+        .about-slide.is-active {
+            display: block;
+        }
+
+        .about-slide img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slideshow-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(26, 26, 26, 0.55);
+            color: var(--light-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .slideshow-control:hover {
+            background-color: rgba(26, 26, 26, 0.75);
+        }
+
+        .slideshow-control.prev {
+            left: 12px;
+        }
+
+        .slideshow-control.next {
+            right: 12px;
+        }
+
+        .slideshow-dots {
+            position: absolute;
+            left: 50%;
+            bottom: 14px;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .slide-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: rgba(247, 245, 242, 0.6);
+            cursor: pointer;
+        }
+
+        .slide-dot.is-active {
+            background-color: var(--primary-color);
+        }
+
         @media (max-width: 768px) {
             .about-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .slideshow-control {
+                width: 38px;
+                height: 38px;
             }
         }
     </style>

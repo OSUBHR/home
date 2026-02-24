@@ -111,4 +111,4 @@ For help with GitHub Pages:
 - [GitHub Community](https://github.community/)
 
 For help with the BHR website:
-- Contact: osubhr@osu.edu
+- Contact: harmreductionbuckeyes@gmail.com

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Photo Placeholder</title>
+  <desc id="desc">Placeholder image for leadership profile photos.</desc>
+  <rect width="600" height="600" fill="#ece7de"/>
+  <circle cx="300" cy="220" r="110" fill="#c9c0b3"/>
+  <path d="M120 520c28-110 116-170 180-170s152 60 180 170" fill="#c9c0b3"/>
+  <text x="300" y="570" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#6b6b6b">Add Profile Photo</text>
+</svg>
